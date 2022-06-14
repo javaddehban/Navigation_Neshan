@@ -1,0 +1,45 @@
+
+{
+  "count": 30,
+  "items": [
+    {
+      "address": "استاد معین، میدان آزادی - تهران",
+      "title": "میدان آزادی",
+      "category": "place",
+      "type": "roundabout",
+      "region": "تهران",
+      "neighbourhood": "استاد معین",
+      "location": {
+        "x": 51.337506323531926,
+        "y": 35.69972391101726,
+        "z": "NaN"
+      }
+    },
+    {
+      "address": "تیموری،  - تهران",
+      "title": "آزادی",
+      "category": "municipal",
+      "type": "primary",
+      "region": "تهران",
+      "neighbourhood": "تیموری",
+      "location": {
+        "x": 51.350021716545314,
+        "y": 35.6999357494922,
+        "z": "NaN"
+      }
+    },
+    {
+      "address": "تهران",
+      "title": "شیشه مینا (استادیوم آزادی)",
+      "category": "municipal",
+      "type": "primary",
+      "region": "تهران",
+      "neighbourhood": "شهرک فرهنگیان",
+      "location": {
+        "x": 51.28473828055576,
+        "y": 35.70908364226829,
+        "z": "NaN"
+      }
+    }
+  ]
+}

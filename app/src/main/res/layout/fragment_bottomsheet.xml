@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="currentText"
+            type="String" />
+
+        <variable
+            name="durationAndDistance"
+            type="String" />
+
+        <variable
+            name="MyClickHandler"
+            type="com.example.navigationneshan.ui.main.view.BottomSheetFragment.MyClickHandler" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/material_size_8"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/text_current"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/material_size_16"
+                android:fontFamily="@font/vazir_light"
+                android:padding="@dimen/material_size_8"
+                android:text="@{currentText}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_title"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_duration_and_distance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/material_size_16"
+                android:fontFamily="@font/vazir_light"
+                android:padding="@dimen/material_size_8"
+                android:text="@{durationAndDistance}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_subtitle"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tv_select_address"
+                app:layout_constraintTop_toBottomOf="@+id/text_current" />
+
+            <Button
+                android:id="@+id/tv_select_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/material_size_16"
+                android:backgroundTint="@color/blue"
+                android:fontFamily="@font/vazir_light"
+                android:gravity="center"
+                android:onClick="@{MyClickHandler::startNavigate}"
+                android:padding="@dimen/material_size_8"
+                android:text="@string/lets_go"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_subtitle">16sp</dimen>
+    <dimen name="text_size_title">20sp</dimen>
+    <dimen name="material_size_8">8dp</dimen>
+    <dimen name="size_card_view_navigate">100dp</dimen>
+    <dimen name="material_size_16">16dp</dimen>
+    <dimen name="loading_size">50dp</dimen>
+    <dimen name="translation_z_loading_layout">90dp</dimen>
+    <dimen name="size_log_splash_activity">200dp</dimen>
+    <dimen name="height_loagin_splash_activity">30dp</dimen>
+    <dimen name="height_tips">180dp</dimen>
+</resources>
